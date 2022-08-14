@@ -62,6 +62,8 @@ $usernameErr = $passwordErr ='';
           <input type="submit" name="submit" value="Login" class="btn btn-dark w-100">
         </div>
     </form>
+    <div> <p> Not a user <a href ="register.php">click here </a> to register</p>
+    </div>
 
 
 

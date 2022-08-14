@@ -84,6 +84,8 @@ $titleErr = $contentErr = $nameErr ='';
         </div>
     </form>
 
+      
+
 
 
 <?php
