@@ -1,11 +1,22 @@
 <?php
+//session_start();
 include 'inc/header.php';
  $username = $password ='';
 $usernameErr = $passwordErr ='';
+if(isset($_SESSION['logged_in']) == true) {
+  header('Location: feedback.php');
+}
 ?>
 
 <img src="/feedback/img/mylogo.png" class="w-25 mb-3" alt="">
    <h2 class="align text-center">  Welcome to Benard Feedback</h2>
+  
+  <?php if(isset($_SESSION['invalid_requests'])) { ?>
+    <div class="alert alert-danger">
+      <?php echo $_SESSION['invalid_requests']; ?>
+      <?php unset($_SESSION['invalid_requests']); ?>
+    </div>
+  <?php  } ?>
 
    <form action="login.php" method="POST" class="mt-4 w-75">
         <div class="mb-3">

@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 include 'config/database.php';?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +14,7 @@ include 'config/database.php';?>
 <body>
   <nav class="navbar navbar-expand-sm navbar-light bg-light mb-4">
     <div class="container">
-      <a class="navbar-brand" href="#">Benard Media</a>
+      <a class="navbar-brand" href="index.php">Benard Media</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
